@@ -1,0 +1,119 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+a {
+  text-decoration: none !important;
+  color: white !important; }
+
+header {
+  width: 100%;
+  height: 60px; }
+  header > div {
+    float: left;
+    height: 100%; }
+    header > div.logo {
+      width: 20%;
+      background: #1E2025; }
+      header > div.logo img {
+        width: 60%;
+        margin: 18px 20% 18px 20%; }
+    header > div.bar {
+      width: 80%;
+      background: #2F323A; }
+      header > div.bar .admin-tag {
+        color: white;
+        margin: 20px 50px 20px 0px;
+        float: right; }
+
+div.content .menu {
+  float: left;
+  width: 20%;
+  height: 600px;
+  padding: 20px;
+  background-color: #2F323A;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+  div.content .menu ul {
+    list-style: none; }
+    div.content .menu ul li {
+      padding: 15px;
+      color: white; }
+      div.content .menu ul li.divider {
+        color: #56595E;
+        border-bottom: solid 1px #56595E;
+        margin-bottom: 20px; }
+      div.content .menu ul li img {
+        width: 15px;
+        margin-right: 5px; }
+      div.content .menu ul li:not(.divider):hover {
+        background: #1E2025; }
+div.content .view-contents {
+  width: 80%;
+  float: left; }
+
+/************************ NEWS ************************/
+.dashboard {
+  width: 100%;
+  height: 600px;
+  background: #F5F5FA;
+  padding: 6%;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+.news {
+  width: 26%;
+  background: white;
+  border-radius: 5px;
+  float: left;
+  margin-right: 6%; }
+  .news > div:not(.img) {
+    padding: 10px; }
+  .news .header {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    width: 100%; }
+    .news .header > div {
+      display: inline-block; }
+    .news .header .newspaper {
+      width: 50%; }
+      .news .header .newspaper span {
+        width: 100%;
+        text-align: left;
+        color: #68A2FA;
+        font-size: 12px; }
+    .news .header .date {
+      width: 50%; }
+      .news .header .date span {
+        display: block;
+        width: 100%;
+        text-align: right;
+        font-size: 12px;
+        color: #BFC8D2; }
+  .news .title {
+    text-transform: capitalize; }
+  .news .img img {
+    width: 100%; }
+  .news .summary {
+    color: dimgray;
+    font-size: 14px; }
+  .news .footer {
+    border-top: 0.5px solid #BFC8D2; }
+    .news .footer > div {
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+      color: #BFC8D2; }
+
+/*# sourceMappingURL=myStyle.css.map */

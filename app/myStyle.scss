@@ -1,0 +1,166 @@
+$dark : #1E2025;
+$semidark: #2F323A;
+$light: #56595E;
+$blue-title: #68A2FA;
+$background: #F5F5FA;
+$icons: #BFC8D2;
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    &>div{
+        float: left;
+        height: 100%;
+        &.logo{
+            width: 20%;
+            background: $dark;
+            img{
+                width: 60%;
+                margin: 18px 20% 18px 20%;
+            }
+        }
+        
+        &.bar{
+            width: 80%;
+            background: $semidark;
+            
+            .admin-tag{
+                color: white;
+                margin: 20px 50px 20px 0px;
+                float: right;
+            }
+        }
+    }
+}
+
+div.content{
+    .menu{
+        float: left;
+        width: 20%;
+        height: 600px;
+        padding: 20px;
+        background-color: $semidark;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+        
+        ul{
+            list-style: none;
+            li{
+                padding: 15px;
+                &.divider{
+                    color: $light;
+                    border-bottom: solid 1px $light;
+                    margin-bottom: 20px;
+                }
+                color: white;
+                
+                img{
+                    width: 15px;
+                    margin-right: 5px;
+                }
+                
+                &:not(.divider):hover{
+                    background: $dark;
+                }
+            }
+        }
+    }
+    
+    .view-contents{
+        width: 80%;
+        float: left;
+    }
+}
+
+
+/************************ NEWS ************************/
+
+.dashboard{
+    width: 100%;
+    height: 600px;
+    background: $background;
+    padding: 6%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.news{
+    width: 26%;
+    background: white;
+    border-radius: 5px;
+    float: left;
+    margin-right: 6%;
+    
+    &>div:not(.img){
+        padding: 10px;
+    }
+    
+    .header{
+        
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+        
+        &>div{
+          display: inline-block;  
+        }
+        width: 100%;
+        
+        .newspaper{
+            width: 50%;
+            span{
+                width: 100%;
+                text-align: left;
+                color: $blue-title;
+                font-size: 12px;
+            }
+        }
+        
+        .date{
+            width: 50%;
+            span{
+                display: block;
+                width: 100%;
+                text-align: right;
+                font-size: 12px;
+                color: $icons;
+            }
+        }
+    }
+    
+    .title{
+        text-transform: capitalize;
+    }
+    
+    .img{
+        img{
+            width: 100%;
+        }
+    }
+    
+    .summary{
+        color: dimgray;
+        font-size: 14px;
+    }
+    
+    .footer{
+        border-top: 0.5px solid $icons;
+        &>div{
+            display: inline-block;
+            width: 33%;
+            text-align: center;
+            color: $icons;
+        }
+    }
+}

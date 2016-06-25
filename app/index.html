@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="myStyle.css">
+  <script src="https://use.fontawesome.com/aece97a712.js"></script>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  
+  <header>
+    <div class="logo"><img src="img/logo.png"></div>
+    <div class="bar"><div class="admin-tag">Admin name <i class="fa fa-cog" aria-hidden="true"></i></div></div>
+  </header>
+  
+  <div class="content">
+    <div class="menu">
+      <ul>
+        <li class="divider">Navigate</li>
+        <li><a href="index.html#!/analytics"><img src="img/icons/analytics.png"> Analytics</a></li>
+        <li><a href="index.html#!/news"><img src="img/icons/news.png"> News</a></li>
+        <li><img src="img/icons/board-brief.png"> Board Brief</li>
+        <li><img src="img/icons/briefcase.png"> Briefcase</li>
+      </ul>
+    </div>
+    <div class="view-contents"><div ng-view></div></div>
+  </div>
+
+  <script src="bower_components/jquery.min.js"></script>
+  <script src="bower_components/highstock/js/highstock.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="factories/analytics.factory.js"></script>
+  <script src="factories/news.factory.js"></script>
+  <script src="directives/news.directive.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
